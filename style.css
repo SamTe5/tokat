@@ -8,7 +8,8 @@ img{
     max-width: 100%;
 }
 .navAyar{
-    background-color: transparent;
+    background-color: rgba(0,0,0,.3);
+    
 }
 .ayarImg{
     background-position: center;
@@ -28,4 +29,12 @@ img{
 }
 .slider4{
     background-image: url(images/yemek.jpg);
+}
+
+ul li a{
+    color: white !important;
+}
+
+.logo{
+    width: 30px;
 }
