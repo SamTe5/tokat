@@ -22,19 +22,20 @@ img {
 }
 
 .slider1 {
-    background-image: url(images/gezi.jpg);
+    background-image: url(images/dubai.jpg);
+    
 }
 
 .slider2 {
-    background-image: url(images/haber.jpg);
+    background-image: url(images/spain.jpg);
 }
 
 .slider3 {
-    background-image: url(images/tarih.jpg);
+    background-image: url(images/sl1.jpg);
 }
 
 .slider4 {
-    background-image: url(images/yemek.jpg);
+    background-image: url(images/england.jpg);
 }
 
 ul li a {
@@ -175,6 +176,7 @@ span {
 .cards2{
     height: 400px;
     margin-bottom: 5%;
+    overflow: auto;
 }
 
 .cards3{
