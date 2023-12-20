@@ -12,3 +12,17 @@ window.addEventListener("scroll", function(){
     road.style.top=value*0.15+"px";
     text.style.top=value*1+"px";
 })
+
+function dinamikBoyutlandir() {
+    var metinElementi = document.getElementById('text');
+    var pencereGenislik = window.innerWidth;
+
+    // Örneğin, pencere genişliğine bağlı olarak metin boyutunu ayarlamak
+    var yeniBoyut = pencereGenislik / 10; // Kendi hesaplamanıza göre ayarlayabilirsiniz
+
+    metinElementi.style.fontSize = yeniBoyut + 'px';
+}
+
+  // Sayfa yüklendiğinde ve pencere boyutu değiştiğinde fonksiyonu çağır
+  window.onload = dinamikBoyutlandir;
+  window.onresize = dinamikBoyutlandir;
