@@ -166,3 +166,30 @@ span {
 ::-webkit-scrollbar-thumb:hover{
     background: linear-gradient(transparent,#64a7de);
 }
+
+.cards1{
+    height: 400px;
+    background-image: url(images/selale.jpg);
+    margin-bottom: 5%;
+}
+
+.cards2{
+    height: 400px;
+    margin-bottom: 5%;
+}
+
+.cards3{
+    height: 400px;
+    background-image: url(images/yemekler.jpg);
+}
+
+.populerYazi{
+    font-size: 1.3rem;
+    margin-top: 15px;
+}
+.cards4{
+    height: 400px;
+    background-image: url(images/piramit.jpg);
+}
+
+
