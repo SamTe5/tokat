@@ -52,7 +52,6 @@ ul li a {
 
 .moonbg {
     background: #0a2a43;
-    min-height: 1500px;
     width: 100%;
 }
 
@@ -191,5 +190,25 @@ span {
     height: 400px;
     background-image: url(images/piramit.jpg);
 }
+.logomuz {
+    z-index: 100000;
+    height: auto;
+    display: inline-block;
+    position: fixed;
+    right: 5%;
+    bottom: 4%;
+
+    
+}
+
+
+.resimLink img{
+    width: 40px !important;
+}
+
+.navbar{
+    z-index: 10000000;
+}
+
 
 
