@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -112,6 +112,7 @@ span {
     color: #fff;
     text-align: center;
     align-items: center;
+    font-family: 'Dancing Script'
 }
 
 #road {
@@ -268,7 +269,42 @@ span {
 .text-center p{
     font-family: 'Dancing Script' !important;
 }
+.nav-item a{
+    font-family: "Dm Serif Display";
+}
 
+.heroImg{
+    width: 100%;
+    height: 25vh;
+    background: linear-gradient(rgba(126, 165, 212, 0.5),rgba(76, 56, 165, 0.5)), url(images/worker.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.icerik2{
+   display: block; 
+}
+.yaziH{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.person{
+    width: 60%;
+}
+.multiText{
+    color: #7f00ff;
+    text-transform: capitalize;
+}
+
+.topline{
+    display: block;
+    position: relative;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
 
 @media screen and (max-width:600px) {
     .cardResim{
