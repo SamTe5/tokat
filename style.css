@@ -276,7 +276,7 @@ span {
 .heroImg{
     width: 100%;
     height: 25vh;
-    background: linear-gradient(rgba(126, 165, 212, 0.5),rgba(76, 56, 165, 0.5)), url(images/worker.jpg);
+    background: linear-gradient(rgba(126, 165, 212, 0.5),rgba(76, 56, 165, 0.5)), url(images/bar.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
