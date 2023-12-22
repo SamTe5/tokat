@@ -306,6 +306,28 @@ span {
     color: #ffffff;
 }
 
+
+
+.iletisim{    
+    color: white;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;    
+}
+.fontum{
+    font-family: 'Pacifico', cursive;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+.bgSolar{
+    background-image: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.1)),url(images/bgiletisim.jpg);   
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+.pngM{
+    width: 20px;
+}
 @media screen and (max-width:600px) {
     .cardResim{
         width: 100%;
