@@ -4,10 +4,17 @@ let mountain=document.getElementById("mountain")
 let road=document.getElementById("road")
 let text=document.getElementById("text")
 var loader=document.getElementById("loader")
+var yazi=document.getElementById("tarihYazi")
 
 window.addEventListener("load",function(){
     loader.style.display="none"
 })
+function showDiv(){
+    yazi.style.display="block"
+}
+function hideDiv(){
+    yazi.style.display="none"
+}
 window.addEventListener("scroll", function(){
     var value=this.window.scrollY;
     bg.style.top=value * 0.5 + "px";

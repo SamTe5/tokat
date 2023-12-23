@@ -374,8 +374,18 @@ span {
 
 .cardim:hover{
     transform: translateY(-10px);
-    background-image: linear-gradient(rgba(126, 165, 212, 0.5),rgba(76, 56, 165, 0.5)),url(images/logo.png);
+    filter: grayscale(100%);
+    background-image: linear-gradient(rgba(126, 165, 212, 0.5),rgba(76, 56, 165, 0.5)),url(images/logomz.jpg);
 }
+.kaleY{
+    font-size: 3rem;
+}
+
+#tarihYazi{
+    display: none;
+}
+
+
 
 
 
