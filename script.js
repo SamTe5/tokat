@@ -3,7 +3,11 @@ let moon=document.getElementById("moon")
 let mountain=document.getElementById("mountain")
 let road=document.getElementById("road")
 let text=document.getElementById("text")
+var loader=document.getElementById("loader")
 
+window.addEventListener("load",function(){
+    loader.style.display="none"
+})
 window.addEventListener("scroll", function(){
     var value=this.window.scrollY;
     bg.style.top=value * 0.5 + "px";
