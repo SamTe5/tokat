@@ -5,15 +5,26 @@ let road=document.getElementById("road")
 let text=document.getElementById("text")
 var loader=document.getElementById("loader")
 var yazi=document.getElementById("tarihYazi")
+var yazi2=document.getElementById("tarihYazi2")
 
 window.addEventListener("load",function(){
     loader.style.display="none"
 })
-function showDiv(){
-    yazi.style.display="block"
+function showDiv(sayi){
+    if(sayi==1){
+        yazi.style.display="block"
+    }else if(sayi==2){
+        yazi2.style.display="block"
+    }
+    
 }
-function hideDiv(){
-    yazi.style.display="none"
+function hideDiv(sayi){
+    if(sayi==1){
+        yazi.style.display="none"
+    }else if(sayi==2){
+        yazi2.style.display="none"
+    }
+    
 }
 window.addEventListener("scroll", function(){
     var value=this.window.scrollY;
