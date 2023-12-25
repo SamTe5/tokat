@@ -6,6 +6,10 @@ let text=document.getElementById("text")
 var loader=document.getElementById("loader")
 var yazi=document.getElementById("tarihYazi")
 var yazi2=document.getElementById("tarihYazi2")
+var yazi3=document.getElementById("tarihYazi3")
+var yazi4=document.getElementById("tarihYazi4")
+var yazi5=document.getElementById("tarihYazi5")
+var yazi6=document.getElementById("tarihYazi6")
 
 window.addEventListener("load",function(){
     loader.style.display="none"
@@ -15,6 +19,14 @@ function showDiv(sayi){
         yazi.style.display="block"
     }else if(sayi==2){
         yazi2.style.display="block"
+    }else if(sayi==3){
+        yazi3.style.display="block"
+    }else if(sayi==4){
+        yazi4.style.display="block"
+    }else if(sayi==5){
+        yazi5.style.display="block"
+    }else if(sayi==6){
+        yazi6.style.display="block"
     }
     
 }
@@ -23,6 +35,14 @@ function hideDiv(sayi){
         yazi.style.display="none"
     }else if(sayi==2){
         yazi2.style.display="none"
+    }else if(sayi==3){
+        yazi3.style.display="none"
+    }else if(sayi==4){
+        yazi4.style.display="none"
+    }else if(sayi==5){
+        yazi3.style.display="none"
+    }else if(sayi==6){
+        yazi4.style.display="none"
     }
     
 }

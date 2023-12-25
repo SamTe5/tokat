@@ -367,6 +367,18 @@ span {
     background-position: center;
     background-size: cover;
 }
+.c5{
+    height: 300px;
+    background-image: url(images/h21.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.c6{
+    height: 300px;
+    background-image: url(images/h22.jpg);
+    background-position: center;
+    background-size: cover;
+}
 .cardim{
     transition: all 0.5s ease;
     position: relative;
@@ -385,6 +397,18 @@ span {
 }
 
 #tarihYazi{
+    display: none;
+}
+
+#tarihYazi2{
+    display: none;
+}
+
+#tarihYazi3{
+    display: none;
+}
+
+#tarihYazi4{
     display: none;
 }
 
