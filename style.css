@@ -12,8 +12,7 @@ img {
 }
 
 .navAyar {
-    background-color: rgba(0, 0, 0, .3);
-
+    background-color: rgba(0, 0, 0, .3); 
 }
 
 
@@ -23,7 +22,22 @@ img {
     width: 100%;
     height: 80vh;
 }
+.ayarImg2{
+    transition: all 0.5s ease;
+}
 
+.ayarImg2:hover{
+    transform: translateY(-10px);
+    filter: grayscale(100%);
+}
+
+.ayarImg3{
+    transition: all 0.3s ease;
+}
+.ayarImg3:hover{
+    transform: translateY(-10px);
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
 .slider1 {
     background-image: url(images/dubai.jpg);
     
@@ -87,7 +101,6 @@ section ::after {
     left: 0;
     width: 100%;
     height: 100%;
-
     z-index: 10000;
     mix-blend-mode: color;
 }
@@ -425,15 +438,30 @@ span {
     display: none;
 }
 
+#moon2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: 1;
 
-
-
+}
 
 
 
 @media screen and (max-width:600px) {
     .cardResim{
         width: 100%;
+    }
+    .hisY{
+        font-size: 2.5rem;
+    }
+    .kaleY{
+        font-size: 2rem;
+    }
+    .kaleS{
+        font-size: 1.5rem;
     }
 }
 

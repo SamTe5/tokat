@@ -1,5 +1,6 @@
 let bg = document.getElementById("bg")
 let moon = document.getElementById("moon")
+let moon2 = document.getElementById("moon2")
 let mountain = document.getElementById("mountain")
 let road = document.getElementById("road")
 let text = document.getElementById("text")
@@ -67,28 +68,37 @@ function hideDiv(sayi) {
 
 }
 if (window.location.pathname === '/index.html' || window.location.pathname === '/') {
-    // Apply the scroll event listener only on index.html
-    window.addEventListener("scroll", function () {
-        var value = this.window.scrollY;
-        bg.style.top = value * 0.5 + "px";
-        moon.style.left = -value * 0.5 + "px";
-        mountain.style.top = -value * 0.15 + "px";
-        road.style.top = value * 0.15 + "px";
-        text.style.top = value * 1 + "px";
-    });
-
-    // Function to dynamically adjust text size based on window width
-    function dinamikBoyutlandir() {
-        var metinElementi = document.getElementById('text');
-        var pencereGenislik = window.innerWidth;
-
-        // For example, adjust text size based on window width
-        var yeniBoyut = pencereGenislik / 10; // You can adjust this calculation according to your needs
-
-        metinElementi.style.fontSize = yeniBoyut + 'px';
+    if(window.innerWidth <= 430){
+        moon2.style.display="block";
+        moon2.style.left="-50px"
+    }else{
+        moon2.style.display="none"
     }
+    document.addEventListener('DOMContentLoaded', function () {        
 
-    // Call the function when the page loads and when the window is resized
-    window.onload = dinamikBoyutlandir;
-    window.onresize = dinamikBoyutlandir;
+        window.addEventListener("scroll", function () {
+            var value = this.window.scrollY;
+            bg.style.top = value * 0.5 + "px";
+            moon.style.left = -value * 0.5 + "px";
+            mountain.style.top = -value * 0.15 + "px";
+            road.style.top = value * 0.15 + "px";
+            text.style.top = value * 1 + "px";
+        });
+
+        // Function to dynamically adjust text size based on window width
+        function dinamikBoyutlandir() {
+            var metinElementi = document.getElementById('text');
+            var pencereGenislik = window.innerWidth;
+
+            // For example, adjust text size based on window width
+            var yeniBoyut = pencereGenislik / 10; // You can adjust this calculation according to your needs
+
+            metinElementi.style.fontSize = yeniBoyut + 'px';
+        }
+
+        // Call the function when the page loads and when the window is resized
+        window.onload = dinamikBoyutlandir;
+        window.onresize = dinamikBoyutlandir;
+
+    });
 }
